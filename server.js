@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.get("/", (req, res) => {
-  res.send("<h1>hello from server</h1>");
+  res.render('main')
 });
 
 app.listen(port, () => {
